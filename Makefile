@@ -40,4 +40,4 @@ clean:
 %.elf: $(STARTUP) $(SRC)
 	$(CC) -o $@ $(CFLAGS) -nostartfiles -Wl,-Tstm32.ld $^
 
-.PHONY: all program
+.PHONY: all clean program
